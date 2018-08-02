@@ -2,7 +2,14 @@
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
 ## Getting Started
-Clone the repo:
+First of all install [Rabbit](https://www.rabbitmq.com/download.html).
+If you are using docker you can just do
+```sh
+  docker run -d --name gaia-rabbit -p 15672:15672 -p 4369:4369 -p 5671:5671 -p 5672:5672 -p 15671:15671 -p 25672:25672  rabbitmq:3-management
+```
+This image comes with the management plugin installed. You can see what happens inside rabbitmq entering `http://localhost:15672/`. Auth by default `guest:guest`
+
+After that clone the repo:
 ```sh
 git clone git@github.com:emilioriosvz/rabbit-nodejs-example.git
 cd rabbit-nodejs-example
