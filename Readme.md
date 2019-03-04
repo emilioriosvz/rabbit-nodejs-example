@@ -16,7 +16,7 @@ cd rabbit-nodejs-example
 ```
 
 ## Install dependencies
-This repo is composed of 3 different node processes, therefore you have to install the dependencies in all
+This repo is composed of 3 different node processes, therefore you have to install the dependencies in all of them
 ```sh
 cd consumer && npm i && cd ../ddos && npm i && cd ../sender && npm i && cd ..
 ```
